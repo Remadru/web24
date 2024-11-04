@@ -1,0 +1,376 @@
+body {
+    margin: 0;
+    background-color: rgb(124, 0, 239);
+}
+
+* {
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+}
+
+/* For desktop: */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 100%;
+    }
+}
+/* For desktop: */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .row {
+        flex-wrap: wrap;
+    }
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* For desktop: */
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 { 
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* For mobile: */
+@media only screen and (max-width: 1000px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+/* For desktop: */
+[class*="col-"] {
+    padding: 15px;
+}
+
+.shadow {
+    box-shadow: 0 0 20px gainsboro;
+    border-radius: 10px;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    padding: 10px;
+    font-size: 20px;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    nav li {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+    nav ul {
+        background-color: rgb(243, 251, 254);
+    }
+}
+
+nav li a {
+    color: rgb(18, 0, 110);
+}
+
+nav li:hover {
+    background-color:  rgb(225, 245, 253);
+}
+
+.text-right{
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+.text-center {
+    text-align: center;
+}
+.py-3 {
+    padding: 16px 0;
+}
+.px-3 {
+    padding: 0 16px;
+}
+.p-3 {
+    padding: 16px;
+}
+
+.bg-azul-o {
+    background-color: rgb(81, 0, 222);
+}
+.bg-azul-c {
+    background-color: rgb(240, 249, 252);
+}
+.bg-orange {
+    background-color: orange;
+}
+.text-white {
+    color: white;
+}
+.text-red {
+    color: red;
+    font-size: 30px;
+    background-color: cyan;
+}
+footer h1 {
+    border-bottom-left-radius: 10px;
+}
+footer h1 {
+    border-bottom-right-radius: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+#btnmenu {
+    font-size: 40px;
+    display: none;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    #btnmenu {
+        display: inline;
+    }
+    #menu{
+        display: none;
+    }
+}
+@media screen and (max-width: 1600px) and (min-width: 1000px)  {
+    #menu{
+        display: block;
+    }
+}
+
+.etiqueta{
+    font-size: xx-large;
+    font-weight: bold;
+    color: red;
+}
+.atributo{
+    font-size: xx-large;
+    font-weight: bold;
+    color: rgb(0, 255, 4);
+}
+main{
+   color: white;
+}
+
+#ulcostumizada{
+    list-style: square;
+}
+#ulcostumizada ul{
+    list-style: disc;
+}
+
+#ulcostumizada ul ul{
+    list-style: circle;
+}
+
+#olcostumizada{
+    list-style: upper-roman;
+}
+#olcostumizada ol{
+    list-style: upper-alpha;
+}
+#olcostumizada ol ol{
+    list-style: decimal;
+}
+#ulimagen{
+    list-style:disc;
+}
+#ulimagen ul{
+    list-style: url(../img/imagen_2024-10-14_093209430-removebg-preview_resized.png);
+}
+#ulimagen ul ul{
+    list-style:circle;
+}
+
+#listas dt {
+    background-color: aquamarine;
+    font-size: 22px;
+    display: inline;
+}
+.lm{
+    background-color: rgb(100, 180, 239);
+}
+.ende{
+    background-color: rgb(149, 220, 149);
+}
+.prog{
+    background-color: rgb(210, 210, 110);
+}
+.pimd{
+    background-color: rgb(183, 121, 124);
+}
+.dasp{
+    background-color: rgb(255, 162, 100);
+}
+.bdd{
+    background-color: rgb(102, 169, 151);
+}
+.ipcg{
+    background-color: rgb(1, 223, 0);
+}
+.sasp{
+    background-color: rgb(210, 211, 251);
+}
+.sisi{
+    background-color: rgb(0, 128, 255);
+}
+.ipe{
+    background-color: rgb(239, 240, 200);
+}
+table.tcentered {
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgb(225, 225, 250);
+}
+table.tcentered th {
+    background-color: rgb(31, 1, 11);
+    color: rgb(248, 180, 197);
+    font-size: 20px;
+}
+table.tcentered td {
+    padding: 10px;
+}
+table.tstriped tr:nth-child(odd) {
+    background-color: aquamarine;
+}
+table.tstriped tr:nth-child(even) {
+    background-color: rgb(248, 227, 170);
+}
+table.horario {
+    font-size: 20px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+table.horario th {
+    background-color: #f0f0f0;
+    color: #008080;
+}
+table.horario th.grupo {
+    font-size: 26px;
+    font-style: italic;
+}
+.bch{
+    background-color: rgb(1, 1, 67);
+    color: white;
+}
+.par{
+    background-color: rgb(228, 175, 34);
+}
+.inpar{
+    background-color: rgb(205, 72, 71);
+}
+
+.btn-blue{
+    background-color: rgb(22, 3, 68);
+}
+
+.btn{
+    border-radius: 8px;
+    width: 70px;
+    height: 30px;
+    color: white;
+}
+input{
+    color: black;
+}
+option{
+    color: black;
+}
+select{
+    color: black;
+}
+textarea{
+    width: 400px;
+    height: 80px;
+    color: black;
+}
+.btn-red{
+    background-color: rgb(78, 6, 6);
+    border-radius: 8px;
+    width: 70px;
+    height: 30px;
+    color: white;
+}
+#legend3{
+    background-color: rgb(22, 3, 68);
+}
+.black{
+    background-color: black;
+}
+#form1 {
+    width: 49%;
+    float: left;
+}
+#form2 {
+    width: 49%;
+    float: right;
+}
+.cb {
+    clear: both;
+}
